@@ -1,0 +1,25 @@
+{
+  "name": "NovaCode",
+  "short_name": "NovaCode",
+  "description": "A more powerful Scratch-style editor whose projects still run on scratch.mit.edu.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#141414",
+  "theme_color": "#1b1b1b",
+  "icons": [
+    { "src": "icon.svg?v=3", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "icon-192.png?v=3", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png?v=3", "sizes": "512x512", "type": "image/png" }
+  ],
+  "file_handlers": [
+    {
+      "action": "./",
+      "accept": {
+        "application/x-novacode": [".sbn", ".sbx"],
+        "application/x.scratch.sb3": [".sb3"]
+      }
+    }
+  ],
+  "launch_handler": { "client_mode": "focus-existing" }
+}
